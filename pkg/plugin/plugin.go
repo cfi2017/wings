@@ -1,25 +1,24 @@
 package plugin
 
 import (
+	"errors"
 	"plugin"
+
+	"github.com/cfi2017/wings-api/pkg"
 )
 
-type Plugin interface {
-	Load(api Api) error
-}
-
-func LoadPlugin(api Api, path string) error {
+func LoadPlugin(api pkg.Api, path string) error {
 	p, err := plugin.Open(path)
 	if err != nil {
 		return err
 	}
-	s, err := p.Lookup("Plugin")
+	s, err := p.Lookup("InitPlugin")
 	if err != nil {
 		return err
 	}
-	if plug, ok := s.(Plugin); ok {
-		return plug.Load(api)
+	if plug, ok := s.(func() pkg.Plugin); ok {
+		return plug().Load(api)
 	} else {
-		return err
+		return errors.New("symbol is not a valid Plugin")
 	}
 }

@@ -18,9 +18,9 @@ require (
 	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
 	github.com/apex/log v1.3.0
 	github.com/asaskevich/govalidator v0.0.0-20190424111038-f61b66f89f4a
-	github.com/aws/aws-sdk-go v1.30.14 // indirect
 	github.com/beevik/etree v1.1.0
 	github.com/buger/jsonparser v0.0.0-20191204142016-1a29609e0929
+	github.com/cfi2017/wings-api v0.0.0-20200529182955-3b50f6f49313
 	github.com/cobaugh/osrelease v0.0.0-20181218015638-a93a0a55a249
 	github.com/containerd/fifo v0.0.0-20190226154929-a9fb20d87448 // indirect
 	github.com/creasty/defaults v1.3.0
@@ -31,7 +31,6 @@ require (
 	github.com/fatih/color v1.9.0
 	github.com/gabriel-vasile/mimetype v0.1.4
 	github.com/gbrlsnchs/jwt/v3 v3.0.0-rc.0
-	github.com/ghodss/yaml v1.0.0
 	github.com/gin-gonic/gin v1.6.2
 	github.com/golang/protobuf v1.3.5 // indirect
 	github.com/google/uuid v1.1.1
@@ -60,8 +59,7 @@ require (
 	github.com/sabhiram/go-gitignore v0.0.0-20180611051255-d3107576ba94
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/spf13/cobra v0.0.7
-	github.com/stretchr/objx v0.2.0 // indirect
-	github.com/yuin/goldmark v1.1.30 // indirect
+	github.com/stretchr/testify v1.5.1 // indirect
 	go.uber.org/zap v1.15.0
 	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
